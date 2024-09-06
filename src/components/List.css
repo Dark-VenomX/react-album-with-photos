@@ -1,0 +1,53 @@
+.list {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #1e1e1e; /* Dark background for the list item */
+  color: #e0e0e0; /* Light text color */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Default box-shadow for better contrast */
+}
+
+/* Hover effect for list items */
+.list:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Button group styling */
+.button-group {
+  margin-top: 10px;
+}
+
+/* Common button styles */
+.update-btn, .delete-btn {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for button hover */
+}
+
+/* Update button styles */
+.update-btn {
+  background-color: #007bff; /* Primary blue color */
+  color: #fff;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Delete button styles */
+.delete-btn {
+  background-color: #dc3545; /* Danger red color */
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05); /* Slight scaling on hover */
+}

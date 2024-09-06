@@ -1,0 +1,74 @@
+.addalbum-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; /* Dark background */
+}
+
+.addalbum-form {
+  background-color: #1f1f1f; /* Darker background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  width: 300px;
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+.inp-container {
+  margin-bottom: 15px;
+}
+
+.inp-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #e0e0e0; /* Lighter text color */
+}
+
+.inp-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #333; /* Darker border */
+  background-color: #333; /* Dark background for inputs */
+  color: #e0e0e0; /* Light text color */
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.inp-container input:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
+
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animation on hover */
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+.error-msg {
+  color: #ff6b6b; /* Soft red for errors */
+  margin-bottom: 10px;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

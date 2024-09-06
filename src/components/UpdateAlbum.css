@@ -1,0 +1,79 @@
+.update-album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212; /* Dark background for the whole page */
+  color: #e0e0e0; /* Light text color for contrast */
+}
+
+.form-container {
+  background-color: #1e1e1e; /* Darker card background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease; /* Smooth transform for hover effect */
+}
+
+.form-container:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.inp-container {
+  margin-bottom: 15px;
+}
+
+.inp-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #e0e0e0; /* Light color for labels */
+}
+
+.inp-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333; /* Dark border for inputs */
+  border-radius: 4px;
+  background-color: #333; /* Dark input background */
+  color: #e0e0e0; /* Light text color inside inputs */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.inp-container input:focus {
+  border-color: #00bcd4; /* Highlight border on focus */
+  outline: none;
+}
+
+.save-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00bcd4; /* Bright cyan button */
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth color and transform transitions */
+}
+
+.save-btn:hover {
+  background-color: #0097a7; /* Darker cyan on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.cancel-link {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #00bcd4; /* Bright cyan for cancel link */
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.cancel-link:hover {
+  color: #0097a7; /* Darker cyan on hover */
+  text-decoration: underline;
+}

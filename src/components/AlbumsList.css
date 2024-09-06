@@ -1,0 +1,39 @@
+.albums-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #121212; /* Dark background for the container */
+  min-height: calc(100vh - 100px); /* Ensure it takes up full height minus navbar/footer */
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+.no-albums-message {
+  font-size: 18px;
+  color: #bbb; /* Lighter text color for better visibility on dark background */
+  text-align: center;
+  margin-top: 20px;
+  animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Animation for slide-in effect */
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}

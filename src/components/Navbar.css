@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1e1e1e; /* Dark background for navbar */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added box-shadow for depth */
+}
+
+.navbar-brand {
+  cursor: pointer;
+  margin: 0;
+  font-size: 24px; /* Increased font size for better visibility */
+}
+
+.brand-first-half {
+  color: #00bcd4; /* Bright cyan for contrast */
+}
+
+.brand-last-half {
+  color: #fff;
+}
+
+.navbar-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00bcd4; /* Bright cyan button */
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for hover effect */
+}
+
+.navbar-btn:hover {
+  background-color: #0097a7; /* Slightly darker cyan on hover */
+  transform: scale(1.05); /* Slight scaling on hover */
+}
